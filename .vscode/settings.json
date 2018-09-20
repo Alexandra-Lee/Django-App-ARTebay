@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "${workspaceFolder}/virtualenv/bin/python"
+    "python.pythonPath": "${workspaceFolder}/virtualenv/bin/python",
+    "python.linting.flake8Enabled": false
 }
