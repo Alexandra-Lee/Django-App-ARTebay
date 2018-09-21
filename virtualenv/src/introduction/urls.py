@@ -18,12 +18,17 @@ from django.conf.urls.static import static
 from django.conf.urls import url
 from django.contrib import admin
 
-from profiles import views
+from profiles import views as profiles_views
+from behold import views as behold_views
+from show import views as show_views
+
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.home, name='home'),
-    url(r'^behold/$', views.behold, name='behold'),
-
+    url(r'^$', profiles_views.home, name='home'),
+    url(r'^behold/$', behold_views.behold, name='behold'),
+    url(r'^show/$', show_views.show, name='show'),
+    
 ]
 
 if settings.DEBUG:

@@ -5,12 +5,11 @@
             <div class="container">
               <div class="row">
                 <div class="col-sm-8 col-md-7 py-4">
-                    <h4 class="text-white">About</h4>
-                    <p class="text-muted">Los Angeles is the new capital of ART.
+                    <h4 class="text-white">Los Angeles</h4>
+                    <p class="text-muted" style="color: lightgray !important">is the new capital of ART.
                     Sea and sunshine, an international Mecca for young and seasoned 
-                    artists and art lovers of all walks. Browse this site to visit a gallery, or exhibition. 
-                    <br/>Or visit <scan id="behold_link"
-                        {% if request.path == 'behold' %} class="active" {% endif %}> 
+                    artists and art lovers of all walks. Browse this site to visit a gallery, or exhibition.</p> 
+                    <p style="color: lightgray !important">Or visit <scan id="behold_link" {% if request.path == 'behold' %} class="active" {% endif %}> 
                         <a href="{% url 'behold' %}">BEHOLD!</a></scan> to bid on the art pieces. <br/>Going once, going twice, and sold to ...<p>
                 </div>
                 <div class="col-sm-4 offset-md-1 py-4">

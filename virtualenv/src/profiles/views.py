@@ -5,6 +5,11 @@ def home(request):
     context = locals()
     template = 'home.html'
     return render(request,template,context)
+
+def show(request):
+    context = locals()
+    template = 'show.html'
+    return render(request,template,context)   
     
 def behold(request):
     context = locals()
