@@ -53,7 +53,7 @@ p {color: red}
 }
 
 /* style 'for about.html' */
-#behold_link {
+.behold_link {
     color: white;
     font-size: 16px;
 }

@@ -1,5 +1,3 @@
-p {color: red}
-/* style for 'base.html' */
 :root {
     --jumbotron-padding-y: 3rem;
   }
@@ -50,10 +48,4 @@ p {color: red}
 
 .both {
     margin-top: 10px;
-}
-
-/* style 'for about.html' */
-#behold_link {
-    color: white;
-    font-size: 16px;
 }

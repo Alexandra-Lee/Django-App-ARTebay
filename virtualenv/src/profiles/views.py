@@ -6,7 +6,7 @@ def home(request):
     template = 'home.html'
     return render(request,template,context)
     
-def about(request):
+def behold(request):
     context = locals()
-    template = 'about.html'
+    template = 'behold.html'
     return render(request,template,context)    
