@@ -2,15 +2,20 @@
 
 {% block content %}
 <div class="container">
+    {% if request.user.is_authenticated %}
+        <h3>Hello {{request.user}} !</h3>
+    {% endif %}    
         <h2 class="jumbotron-heading">WHAT’S HAPPENING on THE ART SCENE in LOS ANGELES & CALIFORNIA</h2>
         <p class="lead text-muted">with sub-sites exploring what makes or breaks an Artist,<br/>
            what serves best the Art Trade, Collectors and Investors, aiming at <br/>
            providing YOU with all you need to BE ALL YOU CAN BE as an Artist, Collector,
            Investor, or Member of the art trade and community. </p>
+        {% if request.user.is_authenticated %}
         <p>
           <a href="{% url 'show' %}" class="btn btn-primary my-2">Add an Art Show</a>
-          <a href="{% url 'behold' %}" class="btn btn-secondary my-2">Bid on Auction</a>
+          <a href="{% url 'behold' %}" class="btn btn-secondary my-2">Bid in Auction</a>
         </p>
+        {% endif %}
 </div>
 
 <div class="album py-5">

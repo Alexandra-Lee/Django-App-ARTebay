@@ -37,22 +37,23 @@
     margin-bottom: .25rem;
   }
 
-  .access {
-      display: flex;
-      list-style: none;
-  }
-
-.reg {
-    margin-left: 250px;
-    margin-right: 30px;
+.access {
+    display: flex;
+    list-style: none;
+    margin-top: 13px !important;
+    
 }
 
-.both {
-    margin-top: 10px;
+.first {
+    margin-left: 250px; 
 }
 
 /* style 'for about.html' */
 #behold_link {
-    color: white;
-    font-size: 16px;
+    color: white !important;
+    font-size: 18px;
+}
+
+.errorlist {
+  color: red !important;
 }

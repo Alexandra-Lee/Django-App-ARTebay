@@ -5,6 +5,7 @@ from django.shortcuts import render
 
 # Create your views here.
 def behold(request):
-    context = locals()
+    context = {}
     template = 'behold.html'
     return render(request,template,context)   
+    
