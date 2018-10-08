@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 EMAIL_HOST = 'smtp.gmail'
 EMAIL_HOST_USER = 'laartinfo@gmail.com'
-EMAIL_HOST_PASSWORD = 'It-sNice!'
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = True
 
